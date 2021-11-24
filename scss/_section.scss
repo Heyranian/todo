@@ -1,0 +1,50 @@
+section {
+    // padding: 10rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    // background-color: darkred;
+    height: 100vh;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        // margin: rem;
+
+        input {
+            margin: 1.5rem;
+            height: 4rem;
+            border: .25rem solid slateblue;
+            border-radius: .5rem;
+            outline: none;
+
+            &:focus {
+                // border:.25em solid slateblue;
+                transform: scale(1.09);
+                transition: all .2s ease-in-out;
+
+            }
+
+            &[type=date] {
+                color: rgba(0, 0, 0, 0.685)
+            }
+
+            &[type=submit] {
+                background-color: blue;
+                border: none;
+                border-radius: .5rem;
+                color: whitesmoke;
+                font-weight: bolder;
+            }
+        }
+
+        label {
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.685)
+        }
+
+
+    }
+}
